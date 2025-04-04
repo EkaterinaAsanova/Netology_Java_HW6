@@ -37,23 +37,23 @@ public class StatsService {
     }
 
     public int getMonthsBelowAverage(long[] sales) {
-     double Avg = 0;
-      int count = 0;
-      Avg = getAverageValue(sales);
-     for (int i = 0; i < sales.length; i++) {
-          if (sales[i] < Avg) {
-             count++;
-         }
-     }
-     return count;
-   }
+        double avg = 0;
+        int count = 0;
+        avg = getAverageValue(sales);
+        for (int i = 0; i < sales.length; i++) {
+            if (sales[i] < avg) {
+                count++;
+            }
+        }
+        return count;
+    }
 
     public int getMonthsAboveAverage(long[] sales) {
-        double Avg = 0;
+        double avg = 0;
         int count = 0;
-        Avg = getAverageValue(sales);
+        avg = getAverageValue(sales);
         for (int i = 0; i < sales.length; i++) {
-            if (sales[i] > Avg) {
+            if (sales[i] > avg) {
                 count++;
             }
         }
